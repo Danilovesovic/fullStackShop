@@ -1,0 +1,191 @@
+.main-header {
+  .top-bar {
+    padding: 9px 0;
+    a {
+      color: $main-color;
+      &:hover {
+        color: $link-hover;
+      }
+    }
+    .phone-info {
+      float: left;
+    }
+    .login {
+      float: right;
+      text-transform: uppercase;
+    }
+  }
+  .navbar {
+    background-color: #fff;
+    margin-bottom: 0;
+    border: none;
+    .navbar-toggle {
+      float: left;
+      padding: 0;
+      border: none;
+      margin: 0;
+      margin-top: 17px;
+      margin-right: 15px;
+      .icon-bar {
+        width: 20px;
+        height: 4px;
+        @include border-radius(2px);
+        background-color: #000;
+        & + .icon-bar {
+          margin-top: 2px;
+        }
+      }
+    }
+    > .container {
+      position: relative;
+    }
+  }
+  .navbar-header {
+    margin: 0;
+  }
+  .logo {
+    width: 58px;
+    margin-top: 17px;
+    margin-bottom: 0;
+    float: left;
+  }
+  .navbar-collapse {
+    margin-top: 10px;
+  }
+  .search-cart-holder {
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    .search, .cart {
+      display: inline-block;
+    }
+    .search {
+      position: relative;
+      top: 4px;
+      margin-right: 10px;
+      .form-control {
+        display: block;
+        width: 140px;
+        height: 24px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding-right: 20px;
+        padding-left: 4px;
+        padding-top: 3px;
+        @include border-radius(0);
+        box-shadow: none;
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid $link-hover;
+        }
+      }
+      .btn {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        background-image: url("../img/search-icon.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+        &:active {
+          box-shadow: none;
+        }
+      }
+    }
+    .cart {
+      position: relative;
+      .badge {
+        position: absolute;
+        padding: 4px 6px 3px;
+        bottom: -8px;
+        right: -8px;
+        background-color: #cc0000;
+      }
+    }
+  }
+}
+.nav {
+  padding-bottom: 5px;
+  li {
+    a {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      display: table;
+      margin: auto;
+      border-bottom: 2px solid transparent;
+      &:hover, &:focus {
+        background-color: transparent;
+        border-bottom: 2px solid $nav-active;
+      }
+
+    }
+  }
+  .active {
+    a {
+      border-bottom: 2px solid $nav-active;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .main-header {
+    .logo {
+      width: 80px;
+      margin-top: 10px;
+    }
+    .nav {
+      padding-bottom: 0;
+      li {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+    .navbar {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      @include border-radius(0);
+      .search-cart-holder {
+        top: -35px;
+      }
+    }
+    .navbar-collapse {
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .main-header {
+    .nav {
+      li {
+        &:last-child {
+          margin-right: 30px;
+        }
+      }
+    }
+    .navbar {
+      .navbar-nav {
+        padding-right: 190px;
+      }
+      .search-cart-holder {
+        top: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .main-header {
+    .logo {
+      width: 104px;
+    }
+  }
+}

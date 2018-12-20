@@ -1,0 +1,185 @@
+.main-footer {
+  color: #fff;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .footer-top {
+    position: relative;
+    padding: 50px 0;
+    background-color: $footer-background;
+    .info {
+      color: $footer-color;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+      a {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .tags {
+      li {
+        float: left;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        a {
+          display: inline-block;
+          padding: 6px 10px;
+          background-color: #95D9F6;
+        &:hover {
+          text-decoration: none;
+          color: $footer-color;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 15px 0;
+    .soc-net {
+      text-align: center;
+      li {
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+        a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          background-size: cover;
+          text-indent: -9999px;
+          &.ks {
+            background-image: url("../img/krojacevaskola.png");
+          }
+          &.fb {
+            background-image: url("../img/facebook.png");
+          }
+          &.tw {
+            background-image: url("../img/twitter.png");
+          }
+          &.in {
+            background-image: url("../img/instagram.png");
+          }
+          &.yt {
+            background-image: url("../img/youtube.png");
+          }
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .footer-nav {
+      float: right;
+      padding-bottom: 0;
+      li {
+        float: left;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        a {
+          padding: 0 0 3px;
+          font-size: 12px;
+          color: $link-color;
+        }
+      }
+    }
+  }
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    background-image: url("../img/back-to-top-white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: none;
+    &:hover {
+      background-image: url("../img/back-to-top-blue.png");
+      background-color: #fff;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .main-footer {
+      .back-to-top {
+        display: block;
+      }
+    .footer-bottom {
+      .soc-net {
+        float: left;
+        li {
+          a {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .main-footer {
+    .footer-top {
+      .tags {
+        li {
+          a {
+            padding: 9px 13px;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 25px 0;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer {
+    .footer-top {
+      h4 {
+        margin-top: 40px;
+      }
+    }
+    .footer-bottom {
+      padding: 35px 0;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .main-footer {
+    .back-to-top {
+      border-color: #85C3DC;
+      bottom: -65px;
+      background-image: url("../img/back-to-top-blue.png");
+      &:hover {
+        background-color: #85C3DC;
+        background-image: url("../img/back-to-top-white.png");
+      }
+    }
+  }
+}

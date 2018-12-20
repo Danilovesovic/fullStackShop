@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="top-bar">
+      <div class="container">
+        <a href="tel:+38111555555" class="phone-info">+381 11 555 555</a>
+        <a href="#" class="login">Prijavi se</a>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Container -->
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1 class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Shop logo" class="img-responsive"></a>
+          </h1>
+        </div>
+        <div class="navbar-collapse collapse" id="navigation">
+          <nav class="clearfix">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Naslovna</a></li>
+              <li><a href="#">Prodavnica</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">O nama</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Search and cart -->
+        <div class="search-cart-holder">
+          <div class="search">
+            <input type="text" name="Search" class="form-control">
+            <button class="btn"></button>
+          </div>
+          <a href="#" class="cart">
+            <img src="img/cart-icon.png" alt="">
+            <span class="badge">2</span>
+          </a>
+        </div>
+        <!-- Search and cart END -->
+      </div>
+      <!-- Container END -->
+    </div>
+    <!-- Navbar END -->
+  </header>
+  <!-- Main Header END -->
+
+  <main>
+    <div class="container">
+    <script type="template">      <a href="#" class="back">{{productTitle}}</a>
+      <article class="product-detailes">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="white-bkg">
+              <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="{{imgSrc}}" class="img-responsive center-block"></a>
+            </div>
+            <div class="gallery-mini">
+              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <h2>{{productTitle}}</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip ex ea commodo consequat.</p>
+
+            <div class="order-holder">
+              <div class="terms-holder">
+                <span class="term">Boja:</span>
+                <ul class="color-picker list-reset clearfix">
+                  <li><a href="#" class="purple">Purple</a></li>
+                  <li><a href="#" class="green">Green</a></li>
+                  <li><a href="#" class="dark-gray">Dark grey</a></li>
+                </ul>
+              </div>
+              <div class="terms-holder">
+                <span class="term">Cena:</span>
+                <span class="price">{{price}} rsd</span>
+              </div>
+              <div class="terms-holder">
+                <span class="term">Dostava:</span>
+                <span class="delivery">Besplatna</span>
+              </div>
+              <div class="terms-holder">
+                <span class="term">Količina:</span>
+                <span class="quantity"><input type="value"></span>
+              </div>
+              <a href="#" class="add-to-cart">Ubaci u korpu</a>
+            </div>
+          </div>
+        </div>
+      </article>
+        
+      </script>
+
+
+      <section class="products-section">
+              <h3 class="top-picked active">Izdvajamo</h3>
+         <div class="row">
+      <script type="secondTemplate">
+       
+          <div class="col-xs-6 col-md-4 col-lg-3 article-clear">
+            <article class="product clearfix">
+              <!-- Image Holder -->
+              <div class="product-img-holder">
+                <a href="#">
+              <img src="img/products/{{imgSrc}}.jpg" alt="1" class="img-responsive">
+            </a>
+                <ul class="hover-list list-reset">
+                  <li><a href="#"><img src="img/shop-icon.png" alt="Shop icon"></a></li>
+                  <li><a href="#"><img src="img/view-icon.png" alt="View icon"></a></li>
+                  <li><a href="#"><img src="img/like-icon.png" alt="Like icon"></a></li>
+                </ul>
+              </div>
+              <!-- Image Holder END -->
+              <!-- Product Title -->
+              <div class="product-title clearfix">
+                <h3>{{productTitle}} <span>Cosmos</span></h3>
+                <span>{{price}} rsd</span>
+              </div>
+              <!-- Product Title END -->
+            </article>
+          </div>
+       
+      </script>
+       </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <!-- Info -->
+          <div class="col-sm-3">
+            <h3>Shop</h3>
+            <p class="info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p><a href="mailto:info@krojacevaskola.com">info@krojacevaskola.com</a> <br>
+              <a href="tel:+381 11 555 55 555">+381 11 555 55 555</a> <br> Nikolaja Ostrovskog 3, Zemun, Srbija
+            </p>
+          </div>
+          <!-- Info END -->
+          <!-- Users -->
+          <div class="col-sm-3 col-md-offset-1 hidden-xs">
+            <h4>Korisnici</h4>
+            <ul class="list-reset">
+              <li><a href="#">Moj nalog</a></li>
+              <li><a href="#">Kako kupiti</a></li>
+              <li><a href="#">Vodič</a></li>
+            </ul>
+          </div>
+          <!-- Users END -->
+          <!-- Tags -->
+          <div class="col-sm-6 col-md-5 hidden-xs">
+            <h4>Tagovi</h4>
+            <ul class="tags list-reset">
+              <li><a href="#">Jakne</a></li>
+              <li><a href="#">Sportska oprema</a></li>
+              <li><a href="#">Jakne</a></li>
+              <li><a href="#">Zimska kolekcija</a></li>
+              <li><a href="#">Haljine</a></li>
+              <li><a href="#">Sportska oprema</a></li>
+              <li><a href="#">Jakne</a></li>
+              <li><a href="#">Sportska oprema</a></li>
+            </ul>
+          </div>
+          <!-- Tags END -->
+        </div>
+        <span class="back-to-top">Back to top</span>
+      </div>
+    </div>
+    <!-- Footer Top END -->
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <!-- Soc Net -->
+        <ul class="soc-net list-reset">
+          <li><a href="#" target="_blank" class="ks">Krojačeva škola</a></li>
+          <li><a href="#" target="_blank" class="fb">Facebook</a></li>
+          <li><a href="#" target="_blank" class="tw">Twitter</a></li>
+          <li><a href="#" target="_blank" class="in">Instagram</a></li>
+          <li><a href="#" target="_blank" class="yt">YouTube</a></li>
+        </ul>
+        <!-- Soc Net END -->
+        <ul class="footer-nav nav hidden-xs list-reset">
+          <li><a href="#">O nama</a></li>
+          <li><a href="#">Uslovi korišćenja</a></li>
+          <li><a href="#">Novosti</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer Bottom END-->
+  </footer>
+  <!-- Main Footer END -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/detailed.js"></script>
+</body>
+
+</html>

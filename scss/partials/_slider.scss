@@ -1,0 +1,31 @@
+#intro-slider {
+  .carousel-control {
+    background-image: none;
+    opacity: 1;
+  }
+  .carousel-indicators {
+    li {
+      width: 7px;
+      height: 7px;
+      margin: 0;
+    }
+  }
+  .arrow-left, .arrow-right {
+    width: 26px;
+    height: 48px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .arrow-left {
+    left: 20%;
+    background-image: url("../img/arrow-left.png");
+  }
+  .arrow-right {
+    right: 20%;
+    background-image: url("../img/arrow-right.png");
+  }
+}
